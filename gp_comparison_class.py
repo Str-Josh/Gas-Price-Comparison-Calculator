@@ -1,4 +1,5 @@
 # python program to test if it's cheaper to travel for gasoline
+# user can type 0 for all required input to view examples of the program's functionality
 
 class CalculateGasPrice(object):
     def __init__(self, mpg, tank_capacity, required_gas, current_city_price,
@@ -36,8 +37,6 @@ class CalculateGasPrice(object):
 
 cur_city_gp = float(input("Please enter the price of gas in your current city: "))
 trav_city_gp = float(input("Now please enter the price of gas in the traveling city: "))
-
-# tank_cap = float(input("Please enter the tank capacity of your vehicle: "))
 city_dist = float(input("Please enter the distance between the cities for travel: "))
 
 if cur_city_gp == 0 and trav_city_gp == 0 and city_dist == 0:
@@ -51,8 +50,7 @@ else:
     # parameter list: mpg, tank capacity, required gas, ..., distance b/w
     dummy_vars = [22, 20, 19]
 
-    comparison_price1 = CalculateGasPrice(dummy_vars[0], dummy_vars[1], 
-                                          dummy_vars[2], cur_city_gp, 
+    comparison_price1 = CalculateGasPrice(dummy_vars[0], dummy_vars[1], dummy_vars[2], cur_city_gp, 
                                           trav_city_gp, city_dist)
 
     comparison_price1.calculate_pay_comparison()
