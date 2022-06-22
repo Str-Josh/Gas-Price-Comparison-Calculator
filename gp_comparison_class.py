@@ -56,18 +56,3 @@ else:
                                           trav_city_gp, city_dist)
 
     comparison_price1.calculate_pay_comparison()
-
-
-"""
-
-# ask if the user would like to account for round trip
-acct_round_trip = str(
-    input("Would you like to account for round trip? (Y/N)\n\t>> "))
-if acct_round_trip.upper() == 'Y':
-    pass
-elif acct_round_trip.upper() == 'N':
-    quit()
-else:
-    print("What tf did you say to me!?!?!? Try again skank")
-
-"""
